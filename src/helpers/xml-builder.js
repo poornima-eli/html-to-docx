@@ -535,6 +535,9 @@ const buildRun = async (vNode, attributes, docxDocumentInstance) => {
             case 'sup':
               tempAttributes.sup = true;
               break;
+            case 'em':
+            case 'mark':
+            case 's':
           }
           const formattingFragment = buildFormatting(tempVNode);
 
